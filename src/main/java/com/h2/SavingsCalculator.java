@@ -22,7 +22,7 @@ public class SavingsCalculator {
     private static float[] toFloatArray(String[] creditStrings) {
         float[] floats = new float[creditStrings.length];
         for(int i = 0; i < creditStrings.length; i++) {
-            floats[i] = Float.parseFloat(creditStrings[i]);
+            floats[i] = Utilities.getFloatValue(creditStrings[i]);
         }
         return floats;
     }
